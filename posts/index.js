@@ -21,7 +21,6 @@ app.post("/posts", async (req, res) => {
   if (!title) {
     res.status(500).send("Bad Request");
   }
-  console.log(req.body);
   posts[id] = {
     id,
     title,
